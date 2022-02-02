@@ -1,0 +1,54 @@
+.btnu {
+  width: 200px;
+}
+.btnus {
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 1500px)  {
+  .main {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 1004px)  {
+  .main {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 629px) and (min-width: 580px){
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: .8rem;
+  }
+}
+@media only screen and (max-width: 500px){
+  .main {
+    margin: -50px;
+    padding: -50px;
+  }
+  .descript {
+    display: none;
+  }
+  .btnus{
+    margin: 0px;
+    margin-top: 80px;
+  }
+  .navbar {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:766px) and (max-width: 629px){
+  .main {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .btnu {
+    width: 150px;
+  }
+}

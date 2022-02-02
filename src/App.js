@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import FullNews from './components/FullNews'
+import Navbar from './components/Navbar'
+import News from './components/News'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class App extends Component {
+
+
+  render() {
+    return (
+      <>
+      <Router>
+        <Navbar name="Shashank" />
+        <div className='container mx-auto px-4'>
+        <Switch>
+          <Route exact path='/'>
+            <News />
+          </Route>
+        </Switch>
+        </div>
+      </Router>
+      </>
+    )
+  }
 }
 
-export default App;
+export default App
